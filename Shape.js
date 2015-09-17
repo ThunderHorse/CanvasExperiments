@@ -1,15 +1,12 @@
-﻿function Shape() {
-    
+﻿function Shape(lineWidth, strokeStyle) {
+    this.lineWidth = lineWidth || "1";
+    this.strokeStyle = strokeStyle || "blue";
+}
 
-    this.draw = function () {
-        throw new Error("Shape.draw() is an abstract method!");
-    }
+Shape.prototype.sayHello = function () {
+    console.log("Hello I'm a shape. Let's Polymorph together.");
+}
 
-    this.setStartPosition = function (startPosition) {
-        console.log(startPosition.x + ', ' + startPosition.y);
-    };
-
-    this.setEndPosition = function (endPosition) {
-        console.log(endPosition.x + ', ' + endPosition.y);
-    };
+Shape.prototype.draw = function () {
+    throw new Error("Shape.draw() is an abstract method!");
 }

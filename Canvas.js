@@ -25,7 +25,9 @@ function CanvasState(canvas) {
 
     canvas.addEventListener('mousedown', function (evt) {
         console.log('mouse down');
-        var box = new Box();
+        var box = new Box("3", "red");
+        //var box = new Box();
+        box.sayHello();
         box.setStartPosition(getMousePos(canvas, evt));
         myState.boxes[myState.boxes.length] = box;
 
