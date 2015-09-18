@@ -1,4 +1,9 @@
-﻿ body {
+﻿.annotationEditor, .canvasContainer, .colorPallete, .strokeWidthSelector, .toolSelector {
+    display:inline-block;
+    vertical-align:top;
+} 
+
+body {
    margin: 0px;
    padding: 0px;
  }
@@ -6,3 +11,70 @@
  canvas {
    border: 2px solid red;
  }
+
+ .canvasContainer{
+     float:left;
+     border:solid 2px purple;
+     margin-right: 10px;
+     height: 500px;
+     width: 500px;
+ }
+
+.colorPallete {
+     border:solid 1px black;
+     background-color: black;
+     height: 400px;
+     width: 120px;
+ }
+
+.strokeColor{
+     display:inline-block;
+     margin: 2px 2px 2px 2px;
+     width: 50px;
+     height: 50px;
+ }
+
+.strokeColorRed{
+    border: solid 1px red;
+    background-color: red;
+ }
+
+.strokeColorBlue{
+     border: solid 1px blue;
+     background-color: blue;
+ }
+
+.strokeColorGreen{
+     border: solid 1px green;
+     background-color: green;
+ }
+
+.strokeColorOrange{
+     border: solid 1px orange;
+     background-color: orange;
+ }
+
+.strokeWidthSelector {
+     border:solid 1px black;
+     background-color: black;
+     height: 110px;
+     width: 114px;
+ }
+
+.strokeWidth, .tool{
+     display:inline-block;
+     text-align:center;
+     font-weight:bold;
+     padding-top: 15px;
+     margin: 2px 2px 2px 2px;
+     width: 50px;
+     height: 35px;
+     background-color: white;
+ }
+
+.toolSelector{
+    border: solid 1px black;
+    background-color: black;
+    height: 55px;
+    width: 114px;
+}

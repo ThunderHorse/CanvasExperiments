@@ -6,11 +6,34 @@
         <title>Canvas Experiment</title>
         <link rel="stylesheet" href="Canvas.css" />
     </head>
-    <body>
-        <canvas id="myCanvas" width="500" height="500"></canvas>
+    <body class="annotationEditor">
+        <div>
+            <div class="canvasContainer">
+                <canvas id="myCanvas" width="500" height="500"></canvas>
+            </div>
+            <div class="colorPallete">
+                <span class="strokeColor strokeColorRed" onclick="CanvasState.prototype.setStrokeStyle('red');"></span>
+                <span class="strokeColor strokeColorBlue"  onclick="CanvasState.prototype.setStrokeStyle('blue');"></span>
+                <span class="strokeColor strokeColorGreen"  onclick="CanvasState.prototype.setStrokeStyle('green');"></span>
+                <span class="strokeColor strokeColorOrange"  onclick="CanvasState.prototype.setStrokeStyle('orange');"></span>
+            </div>
+
+            <div class="strokeWidthSelector">
+                <span class="strokeWidth" onclick="CanvasState.prototype.setStrokeWidth('1');">1</span>
+                <span class="strokeWidth" onclick="CanvasState.prototype.setStrokeWidth('2');">2</span>
+                <span class="strokeWidth" onclick="CanvasState.prototype.setStrokeWidth('3');">3</span>
+                <span class="strokeWidth" onclick="CanvasState.prototype.setStrokeWidth('4');">4</span>
+            </div>
+
+            <div class="toolSelector">
+                <span class="tool" onclick="CanvasState.prototype.setShape('Box');">Box</span>
+                <span class="tool" onclick="CanvasState.prototype.setShape('Line');">Line</span>
+            </div>
+        </div>
 
         <script src="Canvas.js"></script>
         <script src="Shape.js"></script>
         <script src="Box.js"></script>
+        <script src="Line.js"></script>
     </body>
 </html>
